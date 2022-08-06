@@ -1,13 +1,12 @@
 import React, {useContext} from 'react'
 import FeedBackItem from './FeedBackItem'
 import Card from './shared/Card'
-import PropTypes from 'prop-types'
 import { motion, AnimatePresence } from 'framer-motion'
 import FeedbackContext from '../context/FeedbackContext'
 
 
 function FeedBackList({ }) {
-    const {feedback, handleDelete} = useContext(FeedbackContext);
+    const { feedback } = useContext(FeedbackContext);
 
     if (!feedback || feedback.length === 0) {
         return <p>Nothing to see here</p>
@@ -26,7 +25,7 @@ function FeedBackList({ }) {
                 {feedback.map((item) => (
                     <motion.div 
                     key={item.id} initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}}>
-                        <FeedBackItem key={item.id} item={item} handleDelete={handleDelete} />
+                        <FeedBackItem key={item.id} item={item} />
                     </motion.div>
                 ))}
             </AnimatePresence>

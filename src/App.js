@@ -2,8 +2,6 @@ import React, { Fragment } from "react"
 import { ReactDOM } from "react"
 import Header from "./Components/Header";
 import FeedBackList from "./Components/FeedBackList";
-import { useState } from "react";
-import FeedbackData from "./data/FeedbackData";
 import FeedBackStats from "./Components/FeedBackStats";
 import FeedBackForm from "./Components/FeedBackForm";
 import AboutPage from "./pages/AboutPage";
