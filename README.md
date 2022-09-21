@@ -1,3 +1,5 @@
+# A simple react app to practice UI and front end work by providiing a simple forum allowing a user to provide a rating and comments.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
